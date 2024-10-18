@@ -13,8 +13,8 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <div className="navbar flex items-center justify-between px-5 md:px-20 py-1 bg-neutral bg-opacity-35 backdrop-blur-xl fixed w-full z-10">
+    <div className="z-50">
+      <div className="navbar bg-white flex items-center justify-between px-5 md:px-20 py-1 bg-neutral bg-opacity-35 backdrop-blur-3xl fixed w-full z-10">
         <div className="logo w-16">
           {/* Replace the Image component with Next.js optimized Image */}
           <Image src="/logo.png" alt="Logo" width={64} height={64} />
@@ -53,7 +53,7 @@ const Navbar = () => {
 
       {isOpen && (
         <motion.div
-          className="mobile-menu md:hidden  bg-opacity-35 backdrop-blur-xl w-full px-5 py-2 fixed top-16 z-10"
+          className="mobile-menu md:hidden bg-white  bg-opacity-35 backdrop-blur-xl w-full px-5 py-2 fixed top-16 z-10"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}

@@ -7,9 +7,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div>
-      <div className="flex justify-between items-center gap-5 flex-col md:flex-row p-5">
+      <div className="z-50 flex justify-between items-center gap-5 flex-col md:flex-row p-5 overflow-hidden">
         {/* First Section */}
-        <div className="bg-primary text-white p-10 w-full md:w-2/5 rounded-2xl text-center flex flex-col justify-between">
+        <div className="bg-primary text-white p-10 w-full lg:w-2/5 rounded-2xl text-center flex flex-col justify-between">
           <div>
             <h1 className="text-2xl font-bold">
               Ready to dive into the world of robotics
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
 
         {/* Second Section */}
-        <div className="bg-primary text-white p-5 rounded-2xl w-full md:w-3/5 flex flex-col justify-between min-h-[270px]">
+        <div className="bg-primary text-white p-5 rounded-2xl w-full lg:w-3/5 flex flex-col justify-between min-h-[270px] overflow-hidden">
           <div>
             <div>
               <h1 className="text-2xl font-bold">Social Media Handles</h1>
@@ -60,7 +60,7 @@ const Footer = () => {
                 Stay up to date on our latest innovations and achievements
               </p>
             </div>
-            <div className="gap-5 flex items-center mt-3 flex-col md:flex-row">
+            <div className="gap-5 flex items-center mt-3 flex-col lg:flex-row">
               <input
                 type="email"
                 name="email"
@@ -68,7 +68,7 @@ const Footer = () => {
                 placeholder="Enter email address"
                 className="md:min-w-[320px] w-full p-3 rounded-lg text-primary"
               />
-              <Button className="bg-white text-primary hover:text-white hover:border font-semibold h-12 w-full md:w-[100px]">
+              <Button className="bg-white text-primary hover:text-white hover:border font-semibold h-12 w-full lg:w-[100px]">
                 Subscribe
               </Button>
             </div>

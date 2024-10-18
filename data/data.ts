@@ -1,0 +1,42 @@
+export const eventData = [
+  {
+    id: 1,
+    imageSrc: "/gallerybanne.png",
+    eventDate: "05-08-2024",
+    eventTime: "8:00 am - 4:00 pm GMT",
+    title: "Cybersecurity Conference",
+    location: "KNUST, Kumasi",
+  },
+  {
+    id: 2,
+    imageSrc: "/event.jpg",
+    eventDate: "11-09-2024",
+    eventTime: "12:00 pm - 6:00 pm GMT",
+    title: "Future of Web Development Expo",
+    location: "Alisa Hotel, Accra",
+  },
+  {
+    id: 3,
+    imageSrc: "/projectbanner.png",
+    eventDate: "25-10-2024",
+    eventTime: "11:00 am - 3:00 pm GMT",
+    title: "Startup Funding Fair 2024",
+    location: "Silicon House, Accra",
+  },
+  {
+    id: 4,
+    imageSrc: "/event.jpg",
+    eventDate: "11-09-2024",
+    eventTime: "12:00 pm - 6:00 pm GMT",
+    title: "Future of Web Development Expo",
+    location: "Alisa Hotel, Accra",
+  },
+  {
+    id: 5,
+    imageSrc: "/projectbanner.png",
+    eventDate: "25-10-2024",
+    eventTime: "11:00 am - 3:00 pm GMT",
+    title: "Startup Funding Fair 2024",
+    location: "Silicon House, Accra",
+  },
+];

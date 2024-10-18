@@ -32,7 +32,7 @@ const Footer = () => {
             <div>
               <h1 className="text-2xl font-bold">Social Media Handles</h1>
             </div>
-            <div className="bg-white  mt-2 inline-flex items-center justify-center gap-10 p-3 rounded-lg">
+            <div className="bg-white w-full md:w-auto mt-2 inline-flex items-center justify-center gap-10 p-3 rounded-lg">
               <Link href="">
                 <Image src="/x.svg" alt="" width={25} height={25} priority />
               </Link>
@@ -60,15 +60,15 @@ const Footer = () => {
                 Stay up to date on our latest innovations and achievements
               </p>
             </div>
-            <div className="gap-5 flex items-center mt-3">
+            <div className="gap-5 flex items-center mt-3 flex-col md:flex-row">
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="Enter email address"
-                className="md:min-w-[320px] p-3 rounded-lg text-primary"
+                className="md:min-w-[320px] w-full p-3 rounded-lg text-primary"
               />
-              <Button className="bg-white text-primary hover:text-white hover:border font-semibold h-12">
+              <Button className="bg-white text-primary hover:text-white hover:border font-semibold h-12 w-full md:w-[100px]">
                 Subscribe
               </Button>
             </div>

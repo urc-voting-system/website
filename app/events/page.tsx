@@ -1,11 +1,11 @@
 import React from 'react'
 
-const HomePage = () => {
+const Events = () => {
   return (
     <div>
-      Home
+      Events Page
     </div>
   )
 }
 
-export default HomePage
+export default Events

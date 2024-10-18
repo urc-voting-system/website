@@ -1,4 +1,6 @@
+import EventCard from "@/components/EventCard";
 import Eventcarousel from "@/components/Eventcarousel";
+import { eventData } from "@/data/data";
 import Image from "next/image";
 import React from "react";
 
@@ -26,8 +28,15 @@ const Events = () => {
         </div>
         {/* <div className="absolute inset-0 bg-primary opacity-50 "></div> */}
       </div>
-      <div className="">
+      <div className="py-10">
         <Eventcarousel />
+      </div>
+      <div className="lg:mx-44">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5">
+          {eventData.map((event, index) => (
+            <EventCard key={index} event={event} />
+          ))}
+        </div>
       </div>
     </div>
   );

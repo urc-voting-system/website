@@ -17,7 +17,7 @@ const EventCarousel = () => {
       <CarouselContent className="flex items-center justify-start">
           {eventData.map((event) => (
             <CarouselItem
-              key={event.id} // Use event.id as key
+              key={event.id} 
               className="h-52 bg-gray-500 w-1/3 min-h-[450px] relative rounded-lg overflow-hidden mx-2"
             >
               <div className="w-full h-full relative">
@@ -31,10 +31,8 @@ const EventCarousel = () => {
                 />
               </div>
 
-              {/* Overlay Bottom */}
               <div className="absolute inset-0 bottom-0 bg-gradient-to-t from-black to-transparent opacity-70" />
 
-              {/* Event Content */}
               <div className="absolute inset-0 flex flex-col justify-between text-white p-10">
                 <div>
                   <h1 className="text-sm bg-primary bg-opacity-30 backdrop-blur-xl p-2 rounded-xl w-max">
@@ -42,7 +40,6 @@ const EventCarousel = () => {
                   </h1>
                 </div>
 
-                {/* Bottom Left - Event Details */}
                 <div>
                   <div className="text-sm flex gap-5">
                     <span className="border p-2 rounded-2xl">
@@ -53,10 +50,8 @@ const EventCarousel = () => {
                     </span>
                   </div>
 
-                  {/* Event Title */}
                   <div className="text-2xl font-bold mt-2">{event.title}</div>
 
-                  {/* Event Location */}
                   <div className="text-lg mt-1 flex items-center gap-2">
                     <LocateIcon />
                     <span>{event.location}</span>

@@ -16,8 +16,9 @@ const Navbar = () => {
     <div className="z-50">
       <div className="navbar bg-white flex items-center justify-between px-5 md:px-20 py-1 bg-neutral bg-opacity-35 backdrop-blur-3xl fixed w-full z-10">
         <div className="logo w-16">
-          {/* Replace the Image component with Next.js optimized Image */}
-          <Image src="/logo.png" alt="Logo" width={64} height={64} />
+          <Link href="/">
+            <Image src="/logo.png" alt="Logo" width={64} height={64} />
+          </Link>
         </div>
         <div className="navlinks hidden md:flex gap-10">
           <ul className="flex gap-10">

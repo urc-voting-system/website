@@ -40,3 +40,55 @@ export const eventData = [
     location: "Silicon House, Accra",
   },
 ];
+
+
+export const leaders = [
+  {
+    id: 1,
+    name: "John Doe",
+    position: "President",
+    department: "Electrical & Electronic Engineering",
+    level: "L400",
+    image: "/profiles/scot.jpg",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    position: "Vice President",
+    department: "Mechanical Engineering",
+    level: "L300",
+    image: "/profiles/emma.jpg",
+  },
+  {
+    id: 3,
+    name: "Alex Johnson",
+    position: "Secretary",
+    department: "Computer Science",
+    level: "L200",
+    image: "/profiles/alex.jpg",
+  },
+  {
+    id: 4,
+    name: "Ken Adams",
+    position: "Treasurer",
+    department: "Civil Engineering",
+    level: "L400",
+    image: "/profiles/ken.jpg",
+  },
+  {
+    id: 5,
+    name: "Sarah Lee",
+    position: "PRO",
+    department: "Marketing",
+    level: "L300",
+    image: "/profiles/sec.jpg",
+  },
+  {
+    id: 6,
+    name: "Joe Kwame",
+    position: "Organizer",
+    department: "Mechanical Engineering",
+    level: "L300",
+    image: "/profiles/joe.jpg",
+  },
+];

@@ -126,3 +126,67 @@ export const getPosts = async (): Promise<Post[]> => {
 export const getPostById = async (id: string): Promise<Post | undefined> => {
   return posts.find((post) => post.id === id);
 };
+
+
+export 
+const projectsData = [
+  {
+    id: 1,
+    title: "Project Curiosity",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    duration: "3rd October 2021 - 14th December 2023",
+    imageUrl: "/event.png", 
+  },
+  {
+    id: 2,
+    title: "Project Exploration",
+    description:
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+    duration: "1st January 2023 - Present",
+    imageUrl: "/event.png", 
+  },
+
+];
+
+
+export const galleryData = [
+  {
+    title: "TECH FEST 2.0",
+    images: [
+      "/tech1.jpg",
+      "/tech2.jpg",
+      "/tech3.jpg",
+      "/tech4.jpg",
+      "/tech5.jpg",
+      "/tech6.jpg",
+    ],
+  },
+  {
+    title: "STEM FESTIVAL 2021",
+    images: [
+      "/stem1.webp",
+      "/stem2.webp",
+      "/stem3.webp",
+      "/stem4.webp",
+    ],
+  },
+  {
+    title: "GLOBAL MONITORING FOR ENVIRONMENT & SECURITY INCUBATION CHALLENGE 2021",
+    images: [
+      "/global1.webp",
+      "/global2.webp",
+      "/global3.webp",
+      "/global4.webp",
+    ],
+  },
+  {
+    title: "NATIONAL ENERGY QUIZ & INNOVATION CHALLENGE",
+    images: [
+      "/National2.webp",
+      "/National1.webp",
+      "/National3.webp",
+      "/National4.webp",
+    ],
+  },
+];

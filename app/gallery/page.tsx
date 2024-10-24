@@ -6,14 +6,17 @@ const Gallery = () => {
   return (
     <div>
       {/* Hero banner */}
-      <div className="hero_banner relative overflow-hidden h-[300px]">
+      <div className="hero_banner relative overflow-hidden h-[300px] bg-blue-300">
         <Image
-          src="/projectbanner.png"
+          src="/projectbanner.pn"
           alt="Event Banner"
           layout="fill"
           objectFit="cover"
           priority
           className="w-full h-full"
+          // Optional: Provide low-quality placeholder while loading
+          placeholder="blur"
+          blurDataURL="/projectbanner-low-res.jpg"
         />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
           <h1 className="text-3xl md:text-4xl font-bold">Gallery</h1>
@@ -43,8 +46,11 @@ const Gallery = () => {
                     layout="fill"
                     objectFit="cover"
                     className="w-full h-full"
-                    // loading="lazy"
-                    priority
+                    loading="lazy" // Lazy load for faster initial page load
+                    placeholder="blur" // Blur-up effect for low-quality images
+                    blurDataURL={`${image}-low-res.jpg`} // Low-res image URL
+                    // Optional: Use WebP format for smaller file sizes
+                    srcSet={`${image}.webp 1x, ${image}@2x.webp 2x`}
                   />
                 </article>
               ))}

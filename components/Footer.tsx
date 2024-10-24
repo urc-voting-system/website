@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "./ui/button";
-import { InstagramIcon, Linkedin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 

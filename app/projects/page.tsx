@@ -6,9 +6,9 @@ import React from "react";
 const Projects = () => {
   return (
     <div>
-      <div className="hero_banner relative overflow-hidden h-[300px]">
+      <div className="hero_banner relative overflow-hidden h-[300px] bg-blue-500">
         <Image
-          src="/projectbanner.png"
+          src="/gallerybanne.png"
           alt="Event Banner"
           layout="fill"
           objectFit="cover"

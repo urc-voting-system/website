@@ -14,7 +14,7 @@ const Footer = () => {
               Ready to dive into the world of robotics
             </h1>
             <p className="text-sm py-5">
-              Join the UENR Robotics Club and be part of a team that's pushing
+              Join the UENR Robotics Club and be part of a team that is pushing
               the boundaries of technology and innovation
             </p>
           </div>

@@ -1,4 +1,3 @@
-import Pagination from "@/components/Pagination";
 import { Button } from "@/components/ui/button";
 import { getPosts } from "@/data/data";
 import Image from "next/image";

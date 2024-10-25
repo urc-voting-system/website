@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
-import { Card, CardDescription, CardTitle } from "./card-hover-effect"; // Adjust import if needed
+import { Card, CardDescription } from "./card-hover-effect"; // Adjust import if needed
 import { AnimatePresence, motion } from "framer-motion";
 import { leaders } from "@/data/data";
 

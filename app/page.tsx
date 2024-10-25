@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import Hero from "@/components/Home/Hero";
+import Teams from "@/components/Home/Teams";
 
 const HomePage = () => {
   return (
-    <div>
-      Home
-    </div>
-  )
-}
+    <>
+      <Hero />
+      <Teams />
+    </>
+  );
+};
 
-export default HomePage
+export default HomePage;

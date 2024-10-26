@@ -50,7 +50,7 @@ const Gallery = () => {
                     placeholder="blur" // Blur-up effect for low-quality images
                     blurDataURL={`${image}-low-res.jpg`} // Low-res image URL
                     // Optional: Use WebP format for smaller file sizes
-                    srcSet={`${image}.webp 1x, ${image}@2x.webp 2x`}
+                    // srcSet={`${image}.webp 1x, ${image}@2x.webp 2x`}
                   />
                 </article>
               ))}

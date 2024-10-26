@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero: React.FC = () => {
   return (
-    <div className="hero_banner w-full h-fit sm:h-[80vh] md:h-[50vh] pt-14 pb-5 px-[7%] flex items-center justify-center flex-col text-white">
+    <div className="hero_banner w-full h-fit sm:h-[50vh] md:h-[80vh] pt-14 pb-5 px-[7%] flex items-center justify-center flex-col text-white">
       <h1 className="text-3xl sm:text-6xl font-[600] text-center mt-5">
         Welcome to the UENR <br /> Robotics Club
       </h1>

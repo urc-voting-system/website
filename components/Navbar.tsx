@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="z-50">
+    <header className="z-50">
       <div className="navbar bg-white flex items-center justify-between px-5 md:px-20 py-1 bg-neutral bg-opacity-35 backdrop-blur-3xl fixed w-full z-10">
         <div className="logo w-16">
           <Link href="/">
@@ -94,7 +94,7 @@ const Navbar = () => {
           </ul>
         </motion.div>
       )}
-    </div>
+    </header>
   );
 };
 

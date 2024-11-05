@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { getPostById } from "@/data/data";
 import Image from "next/image";
-import ShareBlogPopover from "@/components/ShareBlogPopover"; // Adjust the import path as necessary
+import ShareBlogPopover from "@/components/ShareBlogPopover";
 
 interface Params {
   params: {
@@ -17,13 +17,15 @@ export default async function BlogDetailPage({ params }: Params) {
   }
 
   // Construct the post URL without using window
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"; // Set your base URL
-  const postUrl = `${baseUrl}/blog/${post.id}`; 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:1337";
+  const postUrl = `${baseUrl}/blog/${post.id}`;
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-8">
       <div className="max-w-4xl mx-auto px-4 md:px-8">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-2">{post.title}</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-2">
+          {post.title}
+        </h1>
         <p className="text-gray-500 mb-4">
           {new Date(post.date).toLocaleDateString()}
         </p>

@@ -35,10 +35,10 @@ const Navbar = () => {
               <Link href="/projects">Projects</Link>
             </li>
             <li className="hover:underline">
-              <Link href="/blog">Blog</Link>
+              <Link href="/events">Events</Link>
             </li>
             <li className="hover:underline">
-              <Link href="/events">Events</Link>
+              <Link href="/blog">Blog</Link>
             </li>
           </ul>
         </div>

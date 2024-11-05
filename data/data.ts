@@ -44,7 +44,7 @@ export const eventData = [
 export const leaders = [
   {
     id: 1,
-    name: "John Doe",
+    name: "OBENG PHILEMON",
     position: "President",
     department: "Electrical & Electronic Engineering",
     level: "L400",
@@ -52,7 +52,7 @@ export const leaders = [
   },
   {
     id: 2,
-    name: "Jane Smith",
+    name: "EMMANUEL ",
     position: "Vice President",
     department: "Electrical & Electronic Engineering",
     level: "L300",
@@ -60,7 +60,7 @@ export const leaders = [
   },
   {
     id: 3,
-    name: "Alex Johnson",
+    name: "ALEXANDER ",
     position: "General Secretary",
     department: "Electrical & Electronic Engineering",
     level: "L200",
@@ -68,7 +68,7 @@ export const leaders = [
   },
   {
     id: 4,
-    name: "Ken Adams",
+    name: "KENNETH",
     position: "Project Manager",
     department: "Electrical & Electronic Engineering",
     level: "L400",
@@ -76,7 +76,7 @@ export const leaders = [
   },
   {
     id: 5,
-    name: "Sarah Lee",
+    name: " AYISHA ",
     position: "Financial Secretary",
     department: "Electrical & Electronic Engineering",
     level: "L300",

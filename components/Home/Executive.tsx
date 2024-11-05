@@ -1,4 +1,5 @@
 import React from "react";
+import LeadershipCard from "../ui/LeadersCard";
 
 const Executive: React.FC = () => {
   const executives = [
@@ -44,19 +45,7 @@ const Executive: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-[7%] my-10">
-        {executives &&
-          executives.map(({ name, position }) => (
-            <div
-              key={Math.random() * 20}
-              className="border-2 border-black rounded-lg"
-            >
-              <div className="w-full h-[18rem] bg-gray-300 rounded-t-lg"></div>
-              <div className="p-5">
-                <span className="text-xl">{name}</span> <br />
-                <small className="text-base">{position}</small>
-              </div>
-            </div>
-          ))}
+       <LeadershipCard/>
       </div>
     </div>
   );

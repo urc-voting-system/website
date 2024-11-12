@@ -32,10 +32,10 @@ const Footer = () => {
               <h1 className="text-2xl font-bold">Social Media Handles</h1>
             </div>
             <div className="bg-white w-full md:w-auto mt-2 inline-flex items-center justify-center gap-10 p-3 rounded-lg">
-              <Link href="">
+              <Link href="https://x.com/uenr_robotics?t=Ff749VxcOXRvdTSw5He5Pw&s=09">
                 <Image src="/x.svg" alt="" width={25} height={25} priority />
               </Link>
-              <Link href="">
+              <Link href="https://www.linkedin.com/company/uenr-robotics-club/">
                 <Image
                   src="/Linkedin.svg"
                   alt=""
@@ -44,11 +44,8 @@ const Footer = () => {
                   priority
                 />
               </Link>
-              <Link href="">
+              <Link href="https://www.instagram.com/uenr_robotics?igsh=bG91YmJyYTNmMTd5">
                 <Image src="/gram.svg" alt="" width={25} height={25} priority />
-              </Link>
-              <Link href="">
-                <Image src="/face.svg" alt="" width={25} height={25} priority />
               </Link>
             </div>
           </div>

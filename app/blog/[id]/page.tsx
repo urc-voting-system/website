@@ -16,7 +16,6 @@ export default async function BlogDetailPage({ params }: Params) {
     notFound();
   }
 
-  // Construct the post URL without using window
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:1337";
   const postUrl = `${baseUrl}/blog/${post.id}`;
 
@@ -42,7 +41,7 @@ export default async function BlogDetailPage({ params }: Params) {
         <hr className="my-6 border-gray-300 dark:border-gray-700" />
         <div className="text-gray-600 dark:text-gray-300">
           <p>Share this post:</p>
-          <ShareBlogPopover title={post.title} url={postUrl} />
+          <ShareBlogPopover url={postUrl} />
         </div>
       </div>
     </div>

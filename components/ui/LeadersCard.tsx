@@ -44,7 +44,7 @@ const LeadershipCard = () => {
                   <Image
                     src={leader.image}
                     alt={`${leader.name}'s image`}
-                    width={200}
+                    width={250}
                     height={200}
                     priority
                     className="object-cover w-full"

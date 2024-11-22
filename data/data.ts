@@ -63,7 +63,7 @@ export const leaders = [
     name: "Alexander Opoku Dwumaah ",
     position: " GeneralSecretary",
     department: "Electrical & Electronic Engineering",
-    level: "L200",
+    level: "L400",
     image: "/profiles/alex.jpg",
   },
   {
@@ -71,7 +71,7 @@ export const leaders = [
     name: "Baah Kenneth ",
     position: "Project Manager",
     department: "Electrical & Electronic Engineering",
-    level: "L400",
+    level: "L300",
     image: "/profiles/ken.jpg",
   },
   {
@@ -79,7 +79,7 @@ export const leaders = [
     name: " Fatima Zakaria ",
     position: "Financial Secretary",
     department: "Electrical & Electronic Engineering",
-    level: "L300",
+    level: "L400",
     image: "/profiles/sec.jpg",
   },
   {

@@ -19,12 +19,13 @@ const Footer = () => {
             </p>
           </div>
           <div>
-            <Button className="bg-white text-primary hover:text-white hover:border h-12 font-semibold w-full">
-              Join Us
-            </Button>
+            <Link href={"/"}>
+              <Button className="bg-white text-primary hover:text-white hover:border h-12 font-semibold w-full">
+                Join Us
+              </Button>
+            </Link>
           </div>
-        </div>
-
+        </div>{" "}
         {/* Second Section */}
         <div className="bg-primary text-white p-5 rounded-2xl w-full lg:w-3/5  flex flex-col justify-between overflow-hidden">
           <div>

@@ -25,31 +25,41 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="p-5 lg:mx-44">
-        {projectsData.map((project) => (
-          <div
-            key={project.id}
-            className="flex flex-col  items-center md:flex-row mb-8"
-          >
-            <div className="relative flex-shrink-0 w-full md:w-1/3 h-64 overflow-hidden">
-              <Image
-                src={project.imageUrl}
-                alt={project.title}
-                layout="fill"
-                objectFit="cover"
-                className="rounded-lg shadow-lg"
-              />
-            </div>
-            <div className="md:pl-4 mt-3 md:mt-0">
-              <h2 className="text-xl font-bold">{project.title}</h2>
-              <p className="mt-2 text-gray-700">{project.description}</p>
-              <p className="mt-2 font-semibold">Duration: {project.duration}</p>
-                <Button className="mt-4  bg-primary text-white rounded-lg w-full md:max-w-[320px]">
+      <div className="p-5 lg:px-44 py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectsData.map((project) => (
+            <div
+              key={project.id}
+              className="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group"
+            >
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  src={project.imageUrl}
+                  alt={project.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-300 group-hover:scale-110"
+                />
+              </div>
+              <div className="p-6">
+                <h2 className="text-xl font-bold text-primary mb-2">
+                  {project.title}
+                </h2>
+                <p className="text-gray-600 mb-4 line-clamp-3">
+                  {project.description}
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-500">
+                    Duration: {project.duration}
+                  </span>
+                </div>
+                <Button className=" w-full mt-5 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">
                   Learn More
                 </Button>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -8,6 +8,8 @@ import { eventData } from "@/data/data";
 import Link from "next/link";
 
 const HomePage = () => {
+  const displayEvents = eventData.slice(0, 3);
+
   return (
     <>
       <div className="w-full overflow-hidden">
@@ -27,16 +29,24 @@ const HomePage = () => {
           <span></span>
         </div>
         <div className="lg:mx-44">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5">
-            {eventData.slice(0, 3).map((event, index) => (
-              <EventCard key={index} event={event} />
-            ))}
-          </div>
-          <div className="flex justify-center items-center">
-            <Link href="/events" className=" underline">
-              Show Moret
-            </Link>
-          </div>
+          {displayEvents.length > 0 ? (
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5">
+                {displayEvents.map((event, index) => (
+                  <EventCard key={index} event={event} />
+                ))}
+              </div>
+              <div className="flex justify-center items-center">
+                <Link href="/events" className="underline">
+                  Show More
+                </Link>
+              </div>
+            </>
+          ) : (
+            <div className="flex justify-center items-center p-10 text-gray-500">
+              No events available now
+            </div>
+          )}
         </div>
         <Contact />
       </div>

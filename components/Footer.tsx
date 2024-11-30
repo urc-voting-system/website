@@ -38,7 +38,7 @@ const Footer = () => {
               </Link>
               <Link href="https://www.linkedin.com/company/uenr-robotics-club/">
                 <Image
-                  src="/Linkedin.svg"
+                  src="/LinkedIn.svg"
                   alt=""
                   width={25}
                   height={25}

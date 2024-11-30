@@ -5,15 +5,20 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+interface NavItem {
+  href: string;
+  label: string;
+}
+
+const Navbar: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  const navItems = [
+  const navItems: NavItem[] = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/gallery", label: "Gallery" },

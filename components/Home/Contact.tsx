@@ -22,19 +22,19 @@ const Contact: React.FC = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "Accept": "application/json"
+          Accept: "application/json",
         },
         body: JSON.stringify({
           fullName,
           email,
-          message
-        })
+          message,
+        }),
       });
 
       if (response.ok) {
-        setSubmitStatus({ 
-          success: true, 
-          message: "Thank you for your message! We'll get back to you soon." 
+        setSubmitStatus({
+          success: true,
+          message: "Thank you for your message! We'll get back to you soon.",
         });
         setFullName("");
         setEmail("");
@@ -42,11 +42,8 @@ const Contact: React.FC = () => {
       } else {
         throw new Error("Submission failed");
       }
-    } catch (error) {
-      setSubmitStatus({
-        success: false,
-        message: "Oops! There was a problem sending your message. Please try again."
-      });
+    } catch (error: unknown) {
+      console.error("Submission error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -69,12 +66,15 @@ const Contact: React.FC = () => {
         <ContactInfo label="EMAIL" info="uenrroboticsclub@gmail.com" />
       </div>
 
-      <form onSubmit={handleSubmit} className="bg-[#0c7aad]/30 p-8 rounded-lg shadow-md">
+      <form
+        onSubmit={handleSubmit}
+        className="bg-[#0c7aad]/30 p-8 rounded-lg shadow-md"
+      >
         {submitStatus.success !== null && (
-          <div 
+          <div
             className={`mb-4 p-3 rounded ${
-              submitStatus.success 
-                ? "bg-green-100 text-green-800" 
+              submitStatus.success
+                ? "bg-green-100 text-green-800"
                 : "bg-red-100 text-red-800"
             }`}
           >
@@ -106,8 +106,8 @@ const Contact: React.FC = () => {
           required
           className="w-full p-3 rounded-md border border-gray-300 outline-none focus:border-blue-500 my-3 h-44"
         />
-        <button 
-          type="submit" 
+        <button
+          type="submit"
           disabled={isSubmitting}
           className={`bg-[#0c7aad] text-white py-2 px-4 rounded-md w-full hover:bg-blue-700 transition duration-200 ${
             isSubmitting ? "opacity-50 cursor-not-allowed" : ""

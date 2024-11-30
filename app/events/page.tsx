@@ -2,7 +2,6 @@ import EventCard from "@/components/EventCard";
 import Eventcarousel from "@/components/Eventcarousel";
 import { eventData } from "@/data/data";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const Events = () => {
@@ -63,7 +62,7 @@ const Events = () => {
                 No Events Available
               </h2>
               <p className="text-gray-600 mb-6">
-                We're currently planning some exciting events. Check back soon
+                We are currently planning some exciting events. Check back soon
                 or stay tuned to our social media for updates.
               </p>
             </div>

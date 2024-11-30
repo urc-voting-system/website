@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { LocateIcon } from "lucide-react";
-import { EventData } from "@/data/data"; 
+import { eventData, EventData } from "@/data/data"; 
 
 const EventCarousel: React.FC = () => {
   return (

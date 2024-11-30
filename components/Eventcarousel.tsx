@@ -8,14 +8,14 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import { LocateIcon } from "lucide-react";
-import { eventData } from "@/data/data";
+import { EventData } from "@/data/data"; 
 
-const EventCarousel = () => {
+const EventCarousel: React.FC = () => {
   return (
     <div className="relative lg:mx-44">
       <Carousel className="w-full p-5 rounded-2xl">
-      <CarouselContent className="flex items-center justify-start">
-          {eventData.map((event) => (
+        <CarouselContent className="flex items-center justify-start">
+          {eventData.map((event: EventData) => (
             <CarouselItem
               key={event.id} 
               className="h-52 bg-gray-500 w-1/3 min-h-[450px] relative rounded-lg overflow-hidden mx-2"
@@ -24,10 +24,10 @@ const EventCarousel = () => {
                 <Image
                   src={event.imageSrc}
                   alt={event.title}
-                  layout="fill"
-                  objectFit="cover"
+                  fill
                   priority
-                  className="w-full h-auto"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover w-full h-auto"
                 />
               </div>
 

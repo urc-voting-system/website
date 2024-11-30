@@ -1,14 +1,22 @@
-export const eventData = [
+export interface EventData {
+  id: number;
+  title: string;
+  imageSrc: string;
+  eventDate: string;
+  eventTime: string;
+  location: string;
+}
+
+export const eventData: EventData[] = [
   // {
   //   id: 1,
-  //   imageSrc: "/gallerybanne.png",
-  //   eventDate: "05-08-2024",
-  //   eventTime: "8:00 am - 4:00 pm GMT",
-  //   title: "Cybersecurity Conference",
-  //   location: "KNUST, Kumasi",
+  //   title: "Robotics Workshop",
+  //   imageSrc: "/path/to/image.jpg",
+  //   eventDate: "June 15, 2024",
+  //   eventTime: "2:00 PM",
+  //   location: "UENR Campus"
   // },
 ];
-
 export const leaders = [
   {
     id: 1,
